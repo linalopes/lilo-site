@@ -1,0 +1,23 @@
+# Site
+title: LILO.Zone
+subtitle: Uso criativo de tecnologia
+
+# URL
+url: http://lilo.zone
+baseurl: /
+permalink: :title/
+include: ['_pages']
+
+# Build settings
+markdown: kramdown
+port: 4444
+future: true
+
+# Defaults
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
