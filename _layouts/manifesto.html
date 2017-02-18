@@ -180,7 +180,9 @@
                             {% for network in site.data.network %}
                             <li class="col-md-4">
                                 <div class="grid-item staff-item format-image">
-                                        <img src="{{network.imagem}}" alt="">
+                                  <div class="network-img-container">
+                                    <img class="network-img" src="{{network.imagem}}" alt="">
+                                  </div>
                                     <div class="grid-item-content">
                                         <h3>{{network.nome}}</h3>
                                         <span class="meta-data">{{network.conteudo}}</span>

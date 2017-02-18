@@ -3524,3 +3524,20 @@ ul.slot-exhibitions li h5{
 @media all and (-webkit-min-device-pixel-ratio: 1.5) {
 	
 }
+
+img.network-img {
+  width: 100%;
+  max-width: 480px;
+}
+
+@media (min-width: 992px) {
+  .network-img-container {
+    max-height: 317px;
+    overflow: hidden;
+  }
+
+  img.network-img {
+    width: 317px;
+    max-width: none;
+  }
+}
