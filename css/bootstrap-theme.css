@@ -84,55 +84,55 @@ a:focus, .btn:focus,
   background-image: none;
 }
 .btn-primary {
-  border-color: #2b669a;
+  border-color: #37BEEC;
 }
 .btn-primary:hover,
 .btn-primary:focus {
-  background-color: #2d6ca2;
+  background-color: #37BEEC;
   border-color: transparent;
 }
 .btn-primary:active,
 .btn-primary.active {
-  background-color: #2d6ca2;
+  background-color: #37BEEC;
   border-color: transparent;
 }
 .btn-primary:disabled,
 .btn-primary[disabled] {
-  background-color: #2d6ca2;
+  background-color: #37BEEC;
 }
 .btn-success {
-  border-color: #3e8f3e;
+  border-color: #EFD635;
 }
 .btn-success:hover,
 .btn-success:focus {
-  background-color: #419641;
+  background-color: #EFD635;
   border-color: transparent;
 }
 .btn-success:active,
 .btn-success.active {
-  background-color: #419641;
+  background-color: #EFD635;
   border-color: transparent;
 }
 .btn-success:disabled,
 .btn-success[disabled] {
-  background-color: #419641;
+  background-color: #EFD635;
 }
 .btn-info {
-  border-color: #28a4c9;
+  border-color: #37BEEC;
 }
 .btn-info:hover,
 .btn-info:focus {
-  background-color: #2aabd2;
+  background-color: #37BEEC;
   border-color: transparent;
 }
 .btn-info:active,
 .btn-info.active {
-  background-color: #2aabd2;
+  background-color: #37BEEC;
   border-color: transparent;
 }
 .btn-info:disabled,
 .btn-info[disabled] {
-  background-color: #2aabd2;
+  background-color: #37BEEC;
 }
 .btn-warning {
   border-color: #e38d13;
@@ -152,21 +152,21 @@ a:focus, .btn:focus,
   background-color: #eb9316;
 }
 .btn-danger {
-  border-color: #b92c28;
+  border-color: #FF0080;
 }
 .btn-danger:hover,
 .btn-danger:focus {
-  background-color: #c12e2a;
+  background-color: #FF0080;
   border-color: transparent;
 }
 .btn-danger:active,
 .btn-danger.active {
-  background-color: #c12e2a;
+  background-color: #FF0080;
   border-color: transparent;
 }
 .btn-danger:disabled,
 .btn-danger[disabled] {
-  background-color: #c12e2a;
+  background-color: #FF0080;
 }
 .btn-default,
 .btn-primary,
@@ -516,14 +516,14 @@ a:focus, .btn:focus,
   	background-color: #d9edf7;
 }
 .alert-info, .alert-info .close {
-	color:#3a87ad;
+	color:#37BEEC;
 }
 .alert-warning {
 	border-color:#faebcc;
   	background-color: #fcf8e3;
 }
 .alert-warning, .alert-warning .close {
-	color:#c09853;
+	color:#EFD635;
 }
 
 /* ==================================================
