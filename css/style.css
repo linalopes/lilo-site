@@ -3525,6 +3525,10 @@ ul.slot-exhibitions li h5{
 	
 }
 
+span.filter-active {
+  border-bottom: 3px #ff0080 solid;
+}
+
 li.breadcrumb-button {
   cursor: pointer;
 }
