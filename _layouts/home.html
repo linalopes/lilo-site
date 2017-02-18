@@ -192,7 +192,12 @@
     <div class="notice-bar">
       	<div class="container">
         	<ol class="breadcrumb">
-            	<li>AGENDA/2017</li>
+              <li class="breadcrumb-button evento-ano-2017"><span>AGENDA/2017</span></li>
+              <li class="breadcrumb-button evento-mes-mar"><span>MARÇO</span></li>
+              <li class="breadcrumb-button evento-mes-abr"><span>ABRIL</span></li>
+              <li class="breadcrumb-button evento-mes-mai"><span>MAIO</span></li>
+              <li class="breadcrumb-button evento-mes-jun"><span>JUNHO</span></li>
+              <li class="breadcrumb-button evento-mes-jul"><span>JULHO</span></li>
             </ol>
         </div>
     </div>
@@ -201,9 +206,9 @@
     	<div id="content" class="content full">
             <div class="container">
             	<div class="row">
-                    <ul class="isotope-grid isotope events-grid" data-sort-id="grid">
+                    <ul class="isotope-grid isotope events-grid grid-list" data-sort-id="grid">
                         {% for eventos in site.data.eventos %}
-                        <li class="col-md-4 col-sm-4 grid-item format-standard">
+                        <li class="col-md-4 col-sm-4 grid-item format-standard evento-item evento-mes-{{eventos.mes}}">
                             <a href="{{eventos.ingresso}}" class="media-box grid-featured-img"><img src="images/{{eventos.imagem}}.jpg" alt=""></a>
                             <div class="grid-item-content">
                             	<div class="event-time">
@@ -263,6 +268,7 @@
 <script src="vendor/owl-carousel/js/owl.carousel.min.js"></script> <!-- Owl Carousel -->
 <script src="js/bootstrap.js"></script> <!-- UI -->
 <script src="js/init.js"></script> <!-- All Scripts -->
+<script src="js/event-filter.js"></script>
 <script src="vendor/flexslider/js/jquery.flexslider.js"></script> <!-- FlexSlider -->
 <script src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
 

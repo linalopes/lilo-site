@@ -3525,12 +3525,26 @@ ul.slot-exhibitions li h5{
 	
 }
 
+li.breadcrumb-button {
+  cursor: pointer;
+}
+
 img.network-img {
   width: 100%;
   max-width: 480px;
 }
 
 @media (min-width: 992px) {
+  .grid-list {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
   .network-img-container {
     max-height: 317px;
     overflow: hidden;

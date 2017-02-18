@@ -421,7 +421,7 @@ $(document).ready(function(){
 	VESTIGE.PrettyPhoto();
 	VESTIGE.SuperFish();
 	VESTIGE.Counters();
-	VESTIGE.IsoTope();
+	//VESTIGE.IsoTope();
 	VESTIGE.StickyHeader();
 	VESTIGE.heroflex();
 	VESTIGE.galleryflex();
