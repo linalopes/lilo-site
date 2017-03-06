@@ -89,13 +89,53 @@
                         
                         <h2>Que materiais podem ser cortados à laser?</h2>
                         <p>Diversos materiais podem ser trabalhados pelas máquinas de corte a laser, lembrando que cada material demanda condições diferenciadas no processo de corte ou gravação.</p>
+                        <p>A espessura máxima aproximada para cada material é de 10mm.</p>
                         
+                        <h3>MDF</h3>
+                        <h3>Compensado</h3>
+                        <h3>Acrílico</h3>
+                        <h3>Papel</h3>
+                        <h3>Papelão</h3>
+                        <h3>PETG</h3>
+                        <h3>Tecido</h3>
+                        <h3>Plástico</h3>
+                        <h3>Espuma</h3>
+                        <h3>Isopor</h3>
+                        <h3>EVA</h3>
+                        <h3>Borracha</h3>
                         
                         <p class="lead">Não fornecemos o material!</p>
                         
+                        <h2>Qual o valor?</h2>
+                        <p>A hora uso de máquina COM o operador presente é de 100,00 reais. Para estudantes é de 85,00.</p>
+                        <p>A hora uso de máquina SEM o operador presente (caso você já saiba operar) é de 70,00 reais. Para estudantes é de 55,00.</p>
+                        <p>O pagamento mímimo é de uma hora. Caso queira saber quanto tempo leva em média para fazer seu projeto, envie email para contato@lilo.zone</p>
+                        
                 	</div>
                 
-                
+        <hr class="fw">
+                <h2>Imagens de projetos feitos à laser</h2>
+                <div class="spacer-20"></div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <ul class="owl-carousel carousel-fw" id="team-slider" data-columns="3" data-autoplay="" data-pagination="no" data-arrows="no" data-single-item="no" data-items-desktop="3" data-items-desktop-small="3" data-items-tablet="3" data-items-mobile="1">
+                            <!-- STAFF ITEM -->
+                            {% for laserImg in site.data.laserImg %}
+                            <li class="col-md-4">
+                                <div class="grid-item staff-item format-image">
+                                  <div class="network-img-container">
+                                    <img class="network-img" src="{{laserImg.imagem}}.jpg" alt="">
+                                  </div>
+                                    <div class="grid-item-content">
+                                        <h3>{{laserImg.titulo}}</h3>
+<!--                                        <span class="meta-data">{{laserImg.conteudo}}</span>-->
+                                    </div>
+                                </div>
+                                {% endfor %}
+                            </li>
+                        </ul>
+                    </div>
+                </div>
                     
                 
                 <div class="spacer-20"></div>
