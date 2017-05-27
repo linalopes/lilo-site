@@ -48,21 +48,7 @@
     </div>
 	<!-- Start Site Header -->
 	<div class="site-header-wrapper">
-        <header class="site-header">
-            <div class="container sp-cont">
-                <a href="#" class="visible-sm visible-xs" id="menu-toggle"><i class="fa fa-bars"></i></a>
-                <!-- Main Navigation -->
-                <nav class="main-navigation dd-menu toggle-menu" role="navigation">
-                    <ul class="sf-menu">                    
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="manifesto.html">Manifesto</a></li>
-                        <li><a href="laser.html">Corte à laser</a></li>
-                        <li><a href="contato.html">Contatos</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
-        <!-- End Site Header -->
+      {% include site-header.html %}
    	</div>
     <div class="hero-area">
     	<div class="page-header parallax" style="background-image:url(/images/header/cutter.jpg)"><div><div><span>Cortadora à laser!</span></div></div></div>
@@ -120,24 +106,20 @@
                     <div class="col-md-12">
                         <ul class="owl-carousel carousel-fw" id="team-slider" data-columns="3" data-autoplay="" data-pagination="no" data-arrows="no" data-single-item="no" data-items-desktop="3" data-items-desktop-small="3" data-items-tablet="3" data-items-mobile="1">
                             <!-- STAFF ITEM -->
-                            {% for laserImg in site.data.laserImg %}
-                            <li class="col-md-4">
-                                <div class="grid-item staff-item format-image">
-                                  <div class="network-img-container">
-                                    <img class="network-img" src="{{laserImg.imagem}}.jpg" alt="">
-                                  </div>
-                                    <div class="grid-item-content">
-                                        <h3>{{laserImg.titulo}}</h3>
-<!--                                        <span class="meta-data">{{laserImg.conteudo}}</span>-->
+                            {% for file in site.static_files %}
+                              {% if file.path contains 'images/laser' %}
+                                <li class="col-md-4">
+                                  <div class="grid-item staff-item format-image">
+                                    <div class="network-img-container">
+                                      <img class="network-img" src="{{ file.path }}" alt="">
                                     </div>
-                                </div>
-                                {% endfor %}
-                            </li>
+                                  </div>
+                                </li>
+                              {% endif %}
+                            {% endfor %}
                         </ul>
                     </div>
                 </div>
-                    
-                
                 <div class="spacer-20"></div>
             </div>
         </div>
