@@ -4,7 +4,7 @@ subtitle: Uso criativo de tecnologia
 
 # URL
 url: http://lilo.zone
-baseurl: /
+baseurl: ''
 permalink: :title/
 include: ['_pages']
 
