@@ -16,7 +16,7 @@
     {% include site-header.html %}
 
     <div class="hero-area">
-    	<div class="page-header parallax" style="background-image:url(/images/header/zone2.jpg)"><div><div><span>Mantenha Contato ;)</span></div></div></div>
+      <div class="page-header parallax" style="background-image:url(/images/header/zone2.jpg)"><div><div><span>Mantenha Contato</span></div></div></div>
     </div>
     <!-- Notive Bar -->
     <div class="notice-bar">
@@ -34,8 +34,29 @@
             	<div class="row">
                     <div class="col-md-8 col-sm-8">
                     	<h4 class="accent-color short">Obrigada por sua visita!</h4>
-                        <h2>Nós adoraríamos ouvir mais de você: quais expectativas, como foi sua experiência no Lilo.Zone e quais suas sugestões ;)</h2>
+                        <h2>Nós adoraríamos ouvir mais de você: como foi sua experiência no Lilo.Zone, suas expectativas e sugestões ;)</h2>
               	</div>
+            </div>
+            <div class="spacer-2"></div>
+            <div class="row">
+                <div class="col-md-12">
+                    <ul>
+                        <!-- STAFF ITEM -->
+                        {% for network in site.data.network %}
+                        <li class="col-md-4">
+                            <div class="grid-item staff-item format-image">
+                              <div class="network-img-container">
+                                <img class="network-img" src="{{network.imagem}}" alt="">
+                              </div>
+                                <div class="grid-item-content">
+                                     <h3 style="text-decoration:underline;"><a target="_blank" href="{{network.link}}">{{network.nome}}</a></h3>
+                                    <span class="meta-data">{{network.conteudo}}</span>
+                                </div>
+                            </div>
+                            {% endfor %}
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
    	</div>
