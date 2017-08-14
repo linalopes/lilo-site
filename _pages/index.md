@@ -1,4 +1,4 @@
 ---
-layout: workshops
+layout: home
 permalink: '/'
 ---
